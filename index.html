@@ -19,74 +19,273 @@
       </a>
     </div>
 
-    <!-- Форма с чекбоксами -->
-    <form class="space-y-4">
-      <div class="space-y-2">
-        <!-- Чекбоксы -->
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text1" />
-            <span>Вариант 1</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text2" />
-            <span>Вариант 2</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text3" />
-            <span>Вариант 3</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text4" />
-            <span>Вариант 4</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text5" />
-            <span>Вариант 5</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text6" />
-            <span>Вариант 6</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text7" />
-            <span>Вариант 7</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text8" />
-            <span>Вариант 8</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text9" />
-            <span>Вариант 9</span>
-          </label>
-        </div>
-        <div>
-          <label class="inline-flex items-center space-x-2">
-            <input type="checkbox" class="checkbox" data-target="text10" />
-            <span>Вариант 10</span>
-          </label>
-        </div>
-      </div>
+    <!-- Текст перед формой -->
+    <p class="mb-4 text-base font-semibold">Выберите нужные варианты</p>
+
+    <!-- Форма с кастомными чекбоксами -->
+    <form class="space-y-3">
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text1"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 1</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text2"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 2</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text3"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 3</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text4"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 4</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text5"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 5</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text6"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 6</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text7"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 7</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text8"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 8</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text9"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 9</span>
+      </label>
+
+      <label class="flex items-center gap-3 cursor-pointer select-none">
+        <input
+          type="checkbox"
+          class="hidden peer checkbox"
+          data-target="text10"
+        />
+        <span
+          class="w-5 h-5 flex items-center justify-center rounded border border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-colors"
+        >
+          <svg
+            class="w-3 h-3 text-white hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <span>Вариант 10</span>
+      </label>
     </form>
 
-    <!-- Абзацы текста -->
+    <!-- Тексты -->
     <div class="mt-8 space-y-3">
       <p id="text1" class="hidden">Текст для варианта 1.</p>
       <p id="text2" class="hidden">Текст для варианта 2.</p>
@@ -100,20 +299,12 @@
       <p id="text10" class="hidden">Текст для варианта 10.</p>
     </div>
 
-    <!-- Логика отображения -->
+    <!-- JS -->
     <script>
-      const checkboxes = document.querySelectorAll(".checkbox");
-
-      checkboxes.forEach((checkbox) => {
-        checkbox.addEventListener("change", function () {
-          const targetId = this.dataset.target;
-          const paragraph = document.getElementById(targetId);
-
-          if (this.checked) {
-            paragraph.classList.remove("hidden");
-          } else {
-            paragraph.classList.add("hidden");
-          }
+      document.querySelectorAll(".checkbox").forEach((cb) => {
+        cb.addEventListener("change", () => {
+          const p = document.getElementById(cb.dataset.target);
+          p.classList.toggle("hidden", !cb.checked);
         });
       });
     </script>
