@@ -1,196 +1,184 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Тестовая страница</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>Акцентуации</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Адаптация под мобильные -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              pinkSoft: "#f8d7e8",
-              pinkMain: "#ec9ecf",
-              purpleSoft: "#d6c9f0",
-              purpleText: "#5b4b8a",
-            },
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            amethystBg: "#f1ecf8",
+            amethystBorder: "#b39ddb",
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
-  <body class="bg-white text-gray-800">
-    <main class="max-w-xl mx-auto px-4 py-8 sm:py-12">
+<body class="bg-white text-black">
+  <main class="max-w-xl mx-auto px-4 py-8 sm:py-12">
 
-      <!-- Текст перед ссылкой -->
-      <p class="mb-4 text-lg sm:text-xl leading-relaxed">
-        Для определения своих акцентуаций пройдите психологический тест Шмишека
-        по ссылке ниже:
-      </p>
+    <!-- Текст перед ссылкой -->
+    <p class="mb-4 text-lg sm:text-xl leading-relaxed">
+      Для определения своих акцентуаций пройдите психологический тест Шмишека
+      по ссылке ниже:
+    </p>
 
-      <!-- Ссылка -->
-      <div class="mb-8">
-        <a
-          href="https://example.com"
-          target="_blank"
-          class="text-blue-600 hover:text-blue-800 font-medium underline underline-offset-4 text-lg sm:text-xl"
-        >
-          Перейти к психологическому тесту
-        </a>
+    <!-- Ссылка -->
+    <div class="mb-8">
+      <a
+        href="https://psytests.org/accent/shmi88-run.html"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline underline-offset-4 text-lg sm:text-xl"
+      >
+        Перейти к психологическому тесту
+      </a>
+    </div>
+
+    <!-- Заголовок -->
+    <p class="mb-6 text-xl sm:text-2xl font-semibold">
+      Выберите повышенные у вас акцентуации
+    </p>
+
+    <!-- Форма -->
+    <form class="space-y-4 text-lg sm:text-xl">
+
+      <!-- 11 вариантов -->
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text1" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Демонстративность</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text2" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Застревание</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text3" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Педантичность</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text4" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Возбудимость</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text5" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Гипертимность</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text6" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Дистимность</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text7" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Тревожность</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text8" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Экзальтированность</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text9" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Эмотивность</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text10" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Циклотимность</span>
+      </label>
+
+      <label class="flex items-center gap-4 cursor-pointer select-none">
+        <input type="checkbox" class="hidden peer checkbox" data-target="text11" />
+        <span class="w-6 h-6 rounded-md border border-amethystBorder peer-checked:bg-amethystBorder transition-colors"></span>
+        <span>Нет повышенных акцентуаций</span>
+      </label>
+
+    </form>
+
+    <!-- Карточки -->
+    <div class="mt-10 space-y-4">
+
+      <div id="text1" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Демонстративным людям подходят эффектные, зрелищные жанры: барокко, поп-арт, музыкальный театр, перформанс. Их привлекают яркие образы, выразительные позы, внимание к внешнему эффекту. При анализе стоит обращать внимание на центр композиции и то, куда направлен взгляд зрителя. Важно, как произведение «показывает себя». Часто нравится искусство, которое можно обсуждать и показывать другим. Анализ здесь связан с впечатлением и образом.</p>
       </div>
 
-      <!-- Заголовок -->
-      <p class="mb-6 text-xl sm:text-2xl font-semibold text-purpleText">
-        Выберите нужные варианты
-      </p>
-
-      <!-- Форма -->
-      <form class="space-y-4 text-lg sm:text-xl">
-
-        <!-- Варианты 1–11 -->
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text1" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 1</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text2" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 2</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text3" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 3</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text4" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 4</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text5" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 5</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text6" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 6</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text7" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 7</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text8" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 8</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text9" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 9</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text10" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 10</span>
-        </label>
-
-        <label class="flex items-center gap-4 cursor-pointer select-none">
-          <input type="checkbox" class="hidden peer checkbox" data-target="text11" />
-          <span class="w-6 h-6 flex items-center justify-center rounded-md border border-pinkMain peer-checked:bg-pinkMain transition-colors">
-            <svg class="w-4 h-4 text-white hidden peer-checked:block" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span>Вариант 11</span>
-        </label>
-
-      </form>
-
-      <!-- Карточки -->
-      <div class="mt-10 space-y-4">
-        <div id="text1" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 1.</p></div>
-        <div id="text2" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 2.</p></div>
-        <div id="text3" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 3.</p></div>
-        <div id="text4" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 4.</p></div>
-        <div id="text5" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 5.</p></div>
-        <div id="text6" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 6.</p></div>
-        <div id="text7" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 7.</p></div>
-        <div id="text8" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 8.</p></div>
-        <div id="text9" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 9.</p></div>
-        <div id="text10" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 10.</p></div>
-        <div id="text11" class="hidden bg-pinkSoft border border-purpleSoft rounded-xl p-5 shadow-sm"><p class="text-purpleText">Текст для варианта 11.</p></div>
+      <div id="text2" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Людям застревающего типа особенно интересны произведения с сильным конфликтом и темой несправедливости. Подходят жанры трагедии, психологической драмы, нуара, исторического искусства. При анализе важно выделить ключевой конфликт и понять, что его поддерживает. Композиция часто строится вокруг одного события или идеи. Такие люди склонны долго возвращаться к смыслу произведения. Полезно отслеживать, какие моменты вызывают сильнейший отклик.</p>
       </div>
 
-    </main>
+      <div id="text3" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Педантичным людям близки жанры, где важны порядок и точность: классицизм, минимализм, архитектура, графический дизайн. Они обращают внимание на симметрию, ритм, аккуратность. При анализе полезно рассматривать структуру, повторяющиеся элементы, пропорции. Композиция должна ощущаться завершённой. Хаотичные формы могут вызывать раздражение. Такое искусство хорошо анализируется через форму.</p>
+      </div>
 
-    <!-- JS -->
-    <script>
-      document.querySelectorAll(".checkbox").forEach((cb) => {
-        cb.addEventListener("change", () => {
-          const block = document.getElementById(cb.dataset.target);
-          block.classList.toggle("hidden", !cb.checked);
-        });
+      <div id="text4" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Возбудимым людям подходят резкие, энергичные жанры: экспрессионизм, боевик, стрит-арт, перформанс. Их привлекают контрасты, напряжение, ощущение силы. При анализе стоит обращать внимание на динамику, резкие переходы, агрессивные цвета. Композиция может быть жёсткой и неустойчивой. Медленные и спокойные произведения часто вызывают скуку. Здесь анализ идёт через телесную реакцию.</p>
+      </div>
+
+      <div id="text5" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Людям гипертимического типа особенно подходят яркие, живые жанры: комедия, мюзикл, импрессионизм, жанровая живопись, динамичное кино. Их привлекают произведения, где много движения, общения, персонажей и событий. При анализе стоит обращать внимание на ритм, смену сцен, насыщенность действия. В композиции важны открытость, ощущение пространства и потока жизни. Сложные и медленные формы могут быстро наскучить, но даже в них можно искать моменты всплеска энергии. Такое искусство поддерживает высокий жизненный тонус.</p>
+      </div>
+
+      <div id="text6" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Дистимным людям ближе спокойные, сдержанные жанры: реализм, минимализм, артхаусное кино, камерная фотография. Они ценят простую форму, ясную композицию и отсутствие лишнего шума. При анализе полезно обращать внимание на паузы, пустоты, тишину, настроение сцены. Часто откликаются произведения с темами одиночества и внутреннего размышления. Яркие эффекты могут утомлять или казаться неискренними. Искусство здесь не требует спешки, его важно рассматривать медленно.</p>
+      </div>
+
+      <div id="text7" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Для тревожных людей важно ощущение безопасности и предсказуемости. Им подходят классические жанры, реалистическое искусство, понятные формы и ясная композиция. При анализе стоит сначала определить, что именно происходит в произведении и как оно устроено. Мягкие цвета, плавные линии и спокойный ритм помогают снизить напряжение. Слишком резкие или хаотичные образы могут мешать восприятию.</p>
+      </div>
+
+      <div id="text8" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Экзальтированным людям особенно близки жанры, вызывающие сильные эмоции: романтизм, символизм, эпическое кино, фэнтези. Их привлекает красота, масштаб, ощущение возвышенного. При анализе стоит обращать внимание на контрасты, цвет, свет, музыку и крупные образы. Они легко входят в состояние восторга или печали через искусство. Важно не только что изображено, но и какое чувство это вызывает. Анализ здесь может начинаться с эмоции, а не с логики.</p>
+      </div>
+
+      <div id="text9" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Людям эмотивного типа особенно важны чувства и отношения. Им подходят жанры драмы, портрета, лирической прозы, авторской анимации. При анализе стоит обращать внимание на мимику, жесты, интонации, маленькие детали. Композиция может быть простой, но эмоционально точной. Сильные сцены переживаются глубоко и надолго. Полезно замечать, какие моменты вызывают сочувствие и почему.</p>
+      </div>
+
+      <div id="text10" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Циклотимным людям интересны произведения с меняющимся настроением. Им подходят жанры трагикомедии, многослойного кино, романа с переходами между светлым и тёмным. При анализе важно отслеживать смену тональности и ритма. Композиция может быть неровной, с паузами и резкими переходами. В разные периоды откликаются разные части произведения. Полезно замечать, как настроение влияет на восприятие смысла.</p>
+      </div>
+
+      <div id="text11" class="hidden bg-amethystBg border border-amethystBorder rounded-xl p-5">
+        <p>Люди без ярко выраженных акцентуаций обычно воспринимают искусство гибко и спокойно. Им подходят разные жанры и формы. При анализе они могут свободно переключаться между сюжетом, формой и эмоциями. Часто интерес вызывает баланс и целостность произведения. Полезно смотреть, как элементы работают вместе</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script>
+    document.querySelectorAll(".checkbox").forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        const block = document.getElementById(checkbox.dataset.target);
+        block.classList.toggle("hidden", !checkbox.checked);
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
 </html>
